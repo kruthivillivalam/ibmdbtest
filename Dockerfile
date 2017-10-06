@@ -20,6 +20,8 @@ COPY init-container.sh /bin/
 COPY sshd_config /etc/ssh/
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf	
 
+chmod 777 /bim/init-container.sh
+
 ENV PORT 8080
 
 # Install app dependencies
