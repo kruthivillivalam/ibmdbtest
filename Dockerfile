@@ -20,7 +20,7 @@ COPY init-container.sh /bin/
 COPY sshd_config /etc/ssh/
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf	
 
-chmod 777 /bim/init-container.sh
+chmod 777 /bin/init-container.sh
 
 ENV PORT 8080
 
